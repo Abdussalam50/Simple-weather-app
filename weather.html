@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/a6f42c71af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="weather_app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="insert-location">
+        <i class="fa-solid fa-location-dot" id="Location"></i>
+        <input type="text" placeholder="Set City...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    
+    <div class="container-weather">
+        <div class="weather-info-pic">
+            <h3></h3>
+            <img src="" alt="" srcset="">
+            <h2></h2>
+        </div>
+        <div class="weather-info">
+            <div class="humidity"><p><i class="fa-solid fa-droplet"></i>Humidity:</p><span></span></div>
+            <div class="windSpeed"><p><i class="fa-solid fa-wind"></i> Wind speed:</p><span></span></div>
+            
+        </div>
+    </div>
+<div class="container-error">
+    <img src="error.png">
+    <div class="error-info">
+        <p>Invalid Location !</p>
+    </div>
+</div>
+</div>
+
+<script src="weather.js"></script>
+</body>
+</html>

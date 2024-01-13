@@ -1,0 +1,161 @@
+*{
+    margin:0px;
+    text-decoration:none;
+    padding:0px;
+    
+}
+
+body{
+    background-color: #49598b;
+}
+
+.insert-location{
+    width:340px;
+    height:55px;
+    display:flex;
+    flex-wrap:wrap;
+    position:absolute;
+    top:30%;
+    left:40%;
+    background-color: #fff;
+    border-radius: 30px;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.insert-location input{ 
+    height:90%;
+    width:245px;
+    border:none;
+    font-size:18px;
+    outline:none;
+    margin-top:4px;
+}
+
+.insert-location button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+}
+
+.insert-location i{
+    font-size:24px;
+    text-align: center;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.insert-location button i{
+    font-size:16px;
+    margin-top:0px;
+    padding:0px;
+}
+
+.insert-location .container-error{
+    width:100%;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    gap:30px;
+    margin-top:10px;
+    background-color:#b3bacc ;
+    border-radius:30px;
+    transition: ease-in-out 0.4s;
+    padding-bottom:10px;
+}
+
+.insert-location .container-error img{
+    width:200px;
+    height:200px;
+    padding-top:20px;
+    opacity:0;
+}
+
+.insert-location .container-error p{
+    font-size:25px;
+    font-weight:800;
+    color:#131F43 ;
+}
+
+.container-weather{
+    width:100%;
+    height:auto;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:4px;
+}
+
+
+.container-weather .weather-info-pic{
+    width:330px;
+    height:auto;
+    margin-top:10px;
+}
+
+.weather-info-pic h3 {
+    position:absolute;
+    top:120px;
+    left:140px;
+    color:#fff;
+    font-family:'Roboto', sans-serif;
+    text-shadow: 0px 5px 10px #000;
+    letter-spacing:0.1em;
+}
+
+.container-weather .weather-info-pic img{
+    width:100%;
+    height:300px;
+    border-radius:30px;
+}
+
+
+.container-weather .weather-info-pic h2{
+    position:absolute;
+    top:160px;
+    font-size:60px;
+    left:95px;
+    font-family: 'Roboto', sans-serif; 
+    color:#fff;
+    text-shadow: 0px 5px 10px #000;
+}
+
+.insert-location .weather-info{
+    position:absolute;
+    width:100%;
+    top:280px;
+    display:flex;
+    justify-content:space-around;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.insert-location .weather-info .humidity{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+
+.insert-location .weather-info .windSpeed{
+    display:flex;
+    gap:5px;
+    flex-direction:column;
+    align-items:center;
+}
+
+.insert-location #Location{
+    margin-left:15px;
+}
+
+@media screen and (max-width:430px) {
+    .insert-location{
+        position:absolute;
+        left:26px;
+        top:20px;
+    }
+}
